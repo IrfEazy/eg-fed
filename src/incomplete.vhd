@@ -2,19 +2,19 @@ LIBRARY ieee;
 USE std_logic_1164.ALL;
 
 ENTITY incomplete IS
-	PORT (
-		SIGNAL a, b : IN STD_LOGIC;
-		SIGNAL c : OUT STD_LOGIC);
+    PORT (
+        SIGNAL a, b : IN STD_LOGIC;
+        SIGNAL c : OUT STD_LOGIC);
 END incomplete;
 
 ARCHITECTURE archincomplete OF incomplete IS
 BEGIN
-	PROCESS (a, b)
-	BEGIN
-		IF (a = '1') THEN
-			c <= b;
-		END IF;
-	END PROCESS;
+    PROCESS (a, b)
+    BEGIN
+        IF (a = '1') THEN
+            c <= b;
+        END IF;
+    END PROCESS;
 END archincomplete;
 
 -- Here, the incomplete specification of the
